@@ -1,9 +1,9 @@
 import { Github, Linkedin, Twitter } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Github, href: "https://github.com/thehp23", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/harsh-patel-098b702a5", label: "LinkedIn" },
+  { icon: Twitter, href: "https://x.com/the_hp_2", label: "Twitter" },
 ];
 
 export const Footer = () => {
