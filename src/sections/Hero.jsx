@@ -11,7 +11,7 @@ import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 import { useMemo } from "react";
 
 const skills = [
-  "React","Node.js","Express","MongoDB","Redux","Socket.IO","MongoDB",
+  "React","Next.js","Node.js","Express","MongoDB","Redux","TypeScript","Socket.IO","MongoDB",
   "Postman","Git","GitHub","Tailwind CSS","HTML","CSS","JavaScript",
   "Bootstrap","REST APIs","Agile Methodologies",
 ];
