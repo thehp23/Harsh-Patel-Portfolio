@@ -64,29 +64,35 @@ export const Contact = () => {
       const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
       if (!serviceId || !templateId || !publicKey) {
-        throw new Error("EmailJS configuration is missing.");
+        console.error("Missing EmailJS Config:", { serviceId, templateId, publicKey });
+        throw new Error("Email configuration is missing on the server. Please check environment variables.");
       }
-await emailjs.send(
-  serviceId,
-  templateId,
-  {
-    name: formData.name.trim(),
-    email: formData.email.trim(),
-    message: formData.message.trim(),
-  },
-  publicKey
-);
 
-// ✅ AUTO RESPONSE (NEW)
-await emailjs.send(
-  serviceId,
-  import.meta.env.VITE_EMAILJS_AUTO_TEMPLATE_ID,
-  {
-    name: formData.name.trim(),
-    email: formData.email.trim(),
-  },
-  publicKey
-);
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          name: formData.name.trim(),
+          email: formData.email.trim(),
+          message: formData.message.trim(),
+        },
+        publicKey
+      );
+
+      // ✅ AUTO RESPONSE (NEW)
+      const autoTemplateId = import.meta.env.VITE_EMAILJS_AUTO_TEMPLATE_ID;
+      if (autoTemplateId) {
+        await emailjs.send(
+          serviceId,
+          autoTemplateId,
+          {
+            name: formData.name.trim(),
+            email: formData.email.trim(),
+          },
+          publicKey
+        );
+      }
+      
       setSubmitStatus({
         type: "success",
         message: "Message sent successfully! I'll get back to you soon.",
@@ -98,7 +104,7 @@ await emailjs.send(
       setSubmitStatus({
         type: "error",
         message:
-          err?.text || "Failed to send message. Please try again later.",
+          err?.message || err?.text || "Failed to send message. Please try again later.",
       });
     } finally {
       setIsLoading(false);
