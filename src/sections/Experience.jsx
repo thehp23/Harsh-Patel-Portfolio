@@ -18,10 +18,12 @@ const experiences = [
     current: false,
   },
   {
-    period: "January to April 2026",
+    period: "April to till 2026",
+    role: "Full Stack Developer",
+    company: "Truvixoo",
     description:
       "During this time, I also developed real-world projects, applying my skills to build scalable and user-friendly applications while continuously improving through hands-on practice.",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Redux", "Socket.io", "REST APIs", "Git", "POSTMAN", "Agile"],
+    technologies: ["Next.js","React", "Node.js", "Express", "MongoDB", "TypeScript", "Tailwind CSS", "Redux", "Vercel", "Socket.io", "REST APIs", "Git", "GitHub", "POSTMAN", "Agile"],
     current: false,
   }
 ];
