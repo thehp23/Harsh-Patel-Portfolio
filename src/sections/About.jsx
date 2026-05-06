@@ -49,13 +49,13 @@ export const About = () => {
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I’m a passionate and motivated software engineering fresher with a strong foundation in both frontend and backend development. I have hands-on experience with technologies like React.js, Node.js, and Express for building full-stack applications. I’m eager to learn, grow, and contribute to creating efficient and user-friendly digital solutions.
+                I’m a passionate Full Stack Developer with a strong foundation in both frontend and backend development. I specialize in building scalable, user-friendly web applications using modern technologies like React, Next.js,Redux and TypeScript.
               </p>
               <p>
-                I specialize in full-stack development using React.js, Node.js, and Express. I have experience working with Redux, REST APIs, and Socket.IO to build scalable and real-time applications. My approach focuses on clean code, performance, and creating smooth, user-friendly experiences while continuously improving my skills.
+                My technical expertise spans across the entire development lifecycle. I utilize Tailwind CSS and Bootstrap for creating responsive interfaces, while leveraging Node.js, Express, and MongoDB for robust backend services. I also have hands-on experience with real-time applications using Socket.IO and building secure REST APIs.
               </p>
               <p>
-                When I’m not coding, I spend my time exploring new technologies and enhancing my development skills. As a fresher, I enjoy building personal projects, learning from the developer community, and continuously improving my knowledge to grow as a software developer.
+                I am proficient with essential development tools including Git, GitHub, and Postman, and I have experience deploying applications to Vercel and Netlify using GitHub Actions for CI/CD. Following Agile Methodologies, I focus on writing clean code and delivering high-quality digital experiences.
               </p>
             </div>
 

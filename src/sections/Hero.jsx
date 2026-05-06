@@ -8,25 +8,22 @@ import {
   Download,
 } from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
-import { useMemo } from "react";
+
 
 const skills = [
-  "React","Next.js","Node.js","Express","MongoDB","Redux","TypeScript","Socket.IO","MongoDB",
-  "Postman","Git","GitHub","Tailwind CSS","HTML","CSS","JavaScript",
-  "Bootstrap","REST APIs","Agile Methodologies",
+  "React","Next.js","Node.js","Express","MongoDB","Redux","TypeScript","Socket.IO","MongoDB","Vercel","Netlify","Git Actions","Postman","Git","GitHub","Tailwind CSS","HTML","CSS","JavaScript","Bootstrap","REST APIs","Agile Methodologies",
 ];
+
+const GENERATED_DOTS = Array.from({ length: 30 }, () => ({
+  left: Math.random() * 100,
+  top: Math.random() * 100,
+  duration: 15 + Math.random() * 20,
+  delay: Math.random() * 5,
+}));
 
 export const Hero = () => {
 
-  // ✅ FIX: Stable dots (no re-random on every render)
-  const dots = useMemo(() =>
-    Array.from({ length: 30 }, () => ({
-      left: Math.random() * 100,
-      top: Math.random() * 100,
-      duration: 15 + Math.random() * 20,
-      delay: Math.random() * 5,
-    })), []
-  );
+  const dots = GENERATED_DOTS;
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -68,7 +65,7 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                MERN STACK Developer • Software Engineer
+                Full Stack Developer • Software Engineer
               </span>
             </div>
 
@@ -78,7 +75,7 @@ export const Hero = () => {
               </h1>
 
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I’m Harsh Patel — a passionate MERN Stack Developer focused on building scalable and user-friendly web applications.
+                Hi, I’m Harsh Patel — a passionate Full Stack Developer focused on building scalable and user-friendly web applications.
               </p>
             </div>
 
