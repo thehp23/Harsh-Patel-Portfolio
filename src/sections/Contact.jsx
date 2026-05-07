@@ -69,8 +69,10 @@ export const Contact = () => {
       }
 
       // ✅ SEND TO MONGODB VIA BACKEND API (NEW)
-      const API_URL = import.meta.env.VITE_API_URL || "";
-      await axios.post(`${API_URL}/api/contact`, {
+      const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+      const API_BASE = isLocal ? (import.meta.env.VITE_API_URL || "http://localhost:5000") : "";
+
+      await axios.post(`${API_BASE}/api/contact`, {
         name: formData.name.trim(),
         email: formData.email.trim(),
         message: formData.message.trim(),
