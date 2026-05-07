@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import process from 'node:process';
+import process from 'process';
 
 dotenv.config();
 
@@ -8,10 +8,14 @@ dotenv.config();
 const connectDB = async () => {
   if (mongoose.connection.readyState >= 1) return;
   try {
+    if (!process.env.MONGODB_URI) {
+      throw new Error("MONGODB_URI is not set in environment variables");
+    }
     await mongoose.connect(process.env.MONGODB_URI);
-    console.log("MongoDB Connected");
+    console.log("✅ MongoDB Connected");
   } catch (err) {
-    console.error("MongoDB Connection Error:", err);
+    console.error("❌ MongoDB Connection Error:", err.message);
+    throw err;
   }
 };
 
