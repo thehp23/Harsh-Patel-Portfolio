@@ -107,11 +107,11 @@ await emailjs.send(
 
       setFormData({ name: "", email: "", message: "" });
     } catch (err) {
-      console.error("EmailJS error:", err);
+      console.error("Submission error:", err);
+      const errorMessage = err.response?.data?.message || err.message || "Failed to send message. Please try again later.";
       setSubmitStatus({
         type: "error",
-        message:
-          err?.text || "Failed to send message. Please try again later.",
+        message: errorMessage,
       });
     } finally {
       setIsLoading(false);
