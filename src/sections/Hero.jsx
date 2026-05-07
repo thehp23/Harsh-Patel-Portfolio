@@ -11,7 +11,7 @@ import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 
 const skills = [
-  "React","Next.js","Node.js","Express","MongoDB","Redux","TypeScript","Socket.IO","MongoDB","Vercel","Netlify","Git Actions","Postman","Git","GitHub","Tailwind CSS","HTML","CSS","JavaScript","Bootstrap","REST APIs","Agile Methodologies",
+  "React.js","Next.js","TypeScript","Node.js","Express.js","TypeORM","Prisma","MongoDB","Mongoose","MySQL","Vercel","Netlify","Git","GitHub","Git Actions","Tailwind CSS","Redux","Socket.IO","REST APIs","Stripe","Razorpay","Postman","HTML","CSS","JavaScript","Bootstrap","System Design","Agile Methodologies"
 ];
 
 const GENERATED_DOTS = Array.from({ length: 30 }, () => ({
@@ -65,7 +65,7 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Full Stack Developer • Software Engineer
+                Full Stack Developer • Freelancer
               </span>
             </div>
 

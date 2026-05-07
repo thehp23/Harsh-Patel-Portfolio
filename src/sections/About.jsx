@@ -49,13 +49,13 @@ export const About = () => {
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I’m a passionate Full Stack Developer with a strong foundation in both frontend and backend development. I specialize in building scalable, user-friendly web applications using modern technologies like React, Next.js,Redux and TypeScript.
+                I’m a passionate Full Stack Developer with a keen eye for detail and a relentless drive for innovation. Specializing in modern web technologies, I build scalable, user-centric applications that deliver exceptional experiences. On the frontend, I excel with React.js, Next.js, Redux, TypeScript, and Tailwind CSS to create responsive, accessible interfaces.
               </p>
               <p>
-                My technical expertise spans across the entire development lifecycle. I utilize Tailwind CSS and Bootstrap for creating responsive interfaces, while leveraging Node.js, Express, and MongoDB for robust backend services. I also have hands-on experience with real-time applications using Socket.IO and building secure REST APIs.
+                My backend expertise includes Node.js, Express.js, TypeORM, Prisma, MongoDB, Mongoose, and MySQL, enabling me to develop robust, secure systems. I have hands-on experience with real-time applications using Socket.IO, crafting secure REST APIs, and integrating payment solutions like Stripe and Razorpay to power seamless transactions.
               </p>
               <p>
-                I am proficient with essential development tools including Git, GitHub, and Postman, and I have experience deploying applications to Vercel and Netlify using GitHub Actions for CI/CD. Following Agile Methodologies, I focus on writing clean code and delivering high-quality digital experiences.
+                Proficient with essential tools such as Git, GitHub, Git Actions, Postman, and AI-assisted development tools, I ensure efficient development workflows and reliable deployments to Vercel and Netlify. Embracing Agile Methodologies and System Design principles, I focus on writing clean, maintainable code that not only meets requirements but exceeds expectations, fostering collaboration and driving impactful results.
               </p>
             </div>
 

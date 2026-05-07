@@ -1,5 +1,23 @@
 const experiences = [
   {
+    period: "April to till 2026",
+    role: "Full Stack Developer",
+    company: "Truvixoo",
+    description:
+      "During this time, I also developed real-world projects, applying my skills to build scalable and user-friendly applications while continuously improving through hands-on practice. I used AI-assisted development tools to enhance my coding efficiency and problem-solving capabilities, allowing me to deliver high-quality solutions and stay ahead in the rapidly evolving tech landscape.",
+    technologies: ["Next.js", "React.js", "Node.js", "Express.js", "TypeORM", "Prisma", "MongoDB", "MySQL", "TypeScript", "Tailwind CSS","Vercel", 'Netlify', "Redux", "Socket.io", "REST APIs", "Git", "GitHub", "Github Actions", "Stripe", "Razorpay", "Postman"],
+    current: false,
+  },
+  {
+    period: "January to May 2025",
+    role: "MERN STACK Developer",
+    company: "Royal Technosoft pvt ltd",
+    description:
+      "Where I gained in-depth practical knowledge, worked on real-time projects, and strengthened my problem-solving skills by addressing development challenges.",
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB","REST APIs"],
+    current: false,
+  },
+  {
     period: "July to August 2024",
     role: "MERN STACK Intern",
     company: "Qspiders",
@@ -8,24 +26,7 @@ const experiences = [
     technologies: ["HTML", "CSS", "Bootstrap", "JavaScript", "React", "Node.js"],
     current: true,
   },
-  {
-    period: "January to May 2025",
-    role: "MERN STACK Developer",
-    company: "Royal Technosoft pvt ltd",
-    description:
-      "Where I gained in-depth practical knowledge, worked on real-time projects, and strengthened my problem-solving skills by addressing development challenges.",
-    technologies: ["React", "Node.js", "Express", "MongoDB","REST APIs","Agile"],
-    current: false,
-  },
-  {
-    period: "April to till 2026",
-    role: "Full Stack Developer",
-    company: "Truvixoo",
-    description:
-      "During this time, I also developed real-world projects, applying my skills to build scalable and user-friendly applications while continuously improving through hands-on practice.",
-    technologies: ["Next.js","React", "Node.js", "Express", "MongoDB", "TypeScript", "Tailwind CSS", "Redux", "Vercel", "Socket.io", "REST APIs", "Git", "GitHub", "POSTMAN", "Agile"],
-    current: false,
-  }
+  
 ];
 
 export const Experience = () => {
