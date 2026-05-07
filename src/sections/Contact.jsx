@@ -69,7 +69,8 @@ export const Contact = () => {
       }
 
       // ✅ SEND TO MONGODB VIA BACKEND API (NEW)
-      await axios.post("/api/contact", {
+      const API_URL = import.meta.env.VITE_API_URL || "";
+      await axios.post(`${API_URL}/api/contact`, {
         name: formData.name.trim(),
         email: formData.email.trim(),
         message: formData.message.trim(),
