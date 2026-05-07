@@ -9,6 +9,7 @@ import {
 import { Button } from "@/components/Button";
 import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import axios from "axios";
 
 const contactInfo = [
   {
@@ -66,6 +67,15 @@ export const Contact = () => {
       if (!serviceId || !templateId || !publicKey) {
         throw new Error("EmailJS configuration is missing.");
       }
+
+      // ✅ SEND TO MONGODB VIA BACKEND API (NEW)
+      await axios.post("/api/contact", {
+        name: formData.name.trim(),
+        email: formData.email.trim(),
+        message: formData.message.trim(),
+      });
+
+      // ✅ SEND EMAIL VIA EMAILJS
 await emailjs.send(
   serviceId,
   templateId,
