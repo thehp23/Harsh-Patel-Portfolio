@@ -7,6 +7,7 @@ import {
   Twitter,
   Download,
 } from "lucide-react";
+import { UpworkIcon } from "@/components/UpworkIcon";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 
@@ -102,6 +103,7 @@ export const Hero = () => {
                 { icon: Github, href: "https://github.com/thehp23" },
                 { icon: Linkedin, href: "https://www.linkedin.com/in/harsh-patel-098b702a5" },
                 { icon: Twitter, href: "https://x.com/the_hp_2" },
+                { icon: UpworkIcon, href: "https://www.upwork.com/freelancers/~01629e623f14853603" },
               ].map((social, idx) => (
                 <a
                   key={idx}

@@ -9,6 +9,15 @@ const experiences = [
     current: false,
   },
   {
+    period: "2025 - Present",
+    role: "Freelance Full Stack Developer",
+    company: "Upwork & Remote",
+    description:
+      "Successfully delivering high-quality web solutions to global clients, specializing in full-stack development. I focus on understanding client requirements, designing scalable architectures, and implementing clean, maintainable code using modern full-stack technologies and Next.js.",
+    technologies: ["Next.js", "React.js", "Node.js", "Express.js", "TypeORM", "Prisma", "MongoDB", "MySQL", "TypeScript", "Tailwind CSS","Vercel", 'Netlify', "Redux", "Socket.io", "REST APIs", "Git", "GitHub", "Github Actions", "Stripe", "Razorpay", "Postman"],
+    current: true,
+  },
+  {
     period: "January to May 2025",
     role: "MERN STACK Developer",
     company: "Royal Technosoft pvt ltd",
@@ -19,11 +28,11 @@ const experiences = [
   },
   {
     period: "July to August 2024",
-    role: "MERN STACK Intern",
+    role: "Frontend Intern",
     company: "Qspiders",
     description:
-      "Where I gained foundational knowledge of MERN stack and practical exposure to full-stack web development concepts.",
-    technologies: ["HTML", "CSS", "Bootstrap", "JavaScript", "React", "Node.js"],
+      "Where I gained foundational knowledge of Frontend and practical exposure to full-stack web development concepts.",
+    technologies: ["HTML", "CSS", "Bootstrap", "JavaScript", "React.js"],
     current: true,
   },
   

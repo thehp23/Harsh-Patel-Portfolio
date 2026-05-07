@@ -1,9 +1,11 @@
 import { Github, Linkedin, Twitter } from "lucide-react";
+import { UpworkIcon } from "@/components/UpworkIcon";
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/thehp23", label: "GitHub" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/harsh-patel-098b702a5", label: "LinkedIn" },
   { icon: Twitter, href: "https://x.com/the_hp_2", label: "Twitter" },
+  { icon: UpworkIcon, href: "https://www.upwork.com/freelancers/~01629e623f14853603", label: "Upwork" },
 ];
 
 export const Footer = () => {

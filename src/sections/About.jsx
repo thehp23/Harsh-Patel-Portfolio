@@ -1,4 +1,4 @@
-import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
+import { Code2, Lightbulb, Rocket, Users, Search, Zap } from "lucide-react";
 
 const highlights = [
   {
@@ -23,6 +23,18 @@ const highlights = [
     title: "Innovation",
     description:
       "Staying ahead with the latest technologies and best practices.",
+  },
+  {
+    icon: Search,
+    title: "Problem Solving",
+    description:
+      "Approaching complex challenges with analytical thinking and creative solutions.",
+  },
+  {
+    icon: Zap,
+    title: "Freelance Ready",
+    description:
+      "Available for freelance projects, delivering high-quality solutions on time.",
   },
 ];
 
@@ -55,7 +67,7 @@ export const About = () => {
                 My backend expertise includes Node.js, Express.js, TypeORM, Prisma, MongoDB, Mongoose, and MySQL, enabling me to develop robust, secure systems. I have hands-on experience with real-time applications using Socket.IO, crafting secure REST APIs, and integrating payment solutions like Stripe and Razorpay to power seamless transactions.
               </p>
               <p>
-                Proficient with essential tools such as Git, GitHub, Git Actions, Postman, and AI-assisted development tools, I ensure efficient development workflows and reliable deployments to Vercel and Netlify. Embracing Agile Methodologies and System Design principles, I focus on writing clean, maintainable code that not only meets requirements but exceeds expectations, fostering collaboration and driving impactful results.
+                Proficient with essential tools such as Git, GitHub, Git Actions, Postman, and AI-assisted development tools, I ensure efficient development workflows and reliable deployments to Vercel and Netlify. As a dedicated freelancer, I have collaborated with diverse clients on Upwork, delivering tailored solutions that align with their business goals. Embracing Agile Methodologies and System Design principles, I focus on writing clean, maintainable code that not only meets requirements but exceeds expectations, fostering collaboration and driving impactful results.
               </p>
             </div>
 

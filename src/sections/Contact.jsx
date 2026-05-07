@@ -241,7 +241,7 @@ await emailjs.send(
                 <span className="font-medium">Currently Available</span>
               </div>
               <p className="text-muted-foreground text-sm">
-                I’m actively looking for job roles and freelance work in full-stack development. I enjoy creating fast, responsive web apps using the MERN stack. Excited to collaborate and build real-world products.
+                I’m actively looking for job roles and freelance work in full-stack development. I enjoy creating fast, responsive web apps using modern full-stack technologies. Excited to collaborate and build real-world products.
               </p>
             </div>
           </div>
